@@ -18,6 +18,7 @@ get = C $ \n -> (n, n)
 --getArrow :: NewCounter Int Int
 --getArrow = ArrowC $ \n -> n
 
+
 instance Functor ACounter where
   fmap = liftM
 
