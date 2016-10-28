@@ -1,0 +1,39 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{enumerate}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usetikzlibrary{shapes,arrows,positioning}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\setlength\parindent{24pt}
+
+\newif\ifquoteopen
+\catcode`\"=\active % lets you define `"` as a macro
+\DeclareRobustCommand*{"}{%
+  \ifquoteopen
+      \quoteopenfalse ''%
+  \else
+      \quoteopentrue ``%
+  \fi
+}
+
+\newenvironment{problem}[2][]{\begin{trivlist}
+  \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\begin{document}
+
+\title{Senior Thesis Notes}
+\author{Artem Pavlichenko - pavlich2}
+\maketitle
+
+\begin{problem}{(Understanding Kleisli Arrows)}
+\end{problem}
+
+
+
+\end{document}
