@@ -58,6 +58,7 @@ run (C f) = (f 0)
 
 --runArrow (ArrowC f) = f 0
 runSecond (ArrowD a b) = (a,b)
+--runSecond $ (Main.arr (\n -> 1)) Main.>>> (Main.arr (\n -> 2))
 
 --temp :: Num a => NewCounter a a
 --temp = arr (\n -> n+1)
